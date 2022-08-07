@@ -37,6 +37,12 @@ p {
     line-height: 1.5;
 }
 
+figcaption {
+    text-decoration: underlines;
+    text-decoration-color: #FF682C;
+    margin-top: 10px;
+}
+
 .header {
     display: flex;
     justify-content: end;
@@ -61,6 +67,11 @@ p {
     color: #FF682C;
 }
 
+.header div ul li a:hover {
+    color: #E7DDDD;
+}
+
+
 .about-me {
     display: flex;
     justify-content: space-around;
@@ -71,9 +82,9 @@ p {
 }
 
 .my-image {
-    width: 500px;
+    width: 380px;
     height: 500px;
-    background-image: url('../img/my-image.png');
+    background-image: url('../img/my-image-500x350.jpg');
     background-repeat: no-repeat;
     border-radius: 50%;
 }
@@ -89,7 +100,7 @@ p {
     width: 20%;
     height: auto;
     border-bottom: 1px solid;
-    border-color:  #E7DDDD;
+    border-color: #FF682C;
 }
 
 .competence {
@@ -99,6 +110,25 @@ p {
     width: 100%; 
     height: 100vh;
     padding: 1.5em;
+    border-bottom: 1px solid;
+}
+
+.container-skills ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: #e7dddd0c;
+}
+
+.bx {
+    font-size: 100px;
+}
+
+.competence i:hover {
+    color: #FF682C;
 }
 
 .projects {
@@ -107,6 +137,7 @@ p {
     width: 100%;
     height: 100vh;
     padding: 1.5em;
+    border-bottom: 1px solid;
 }
 
 .cards {
@@ -122,6 +153,8 @@ p {
     text-align: center;
     width: 300px;
     height: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #C1B9B2;
 }
 
 .card:hover {
@@ -130,12 +163,14 @@ p {
 
 .cdv {
     background-image: url('../img/tela-controle-vendas-250x300.png');
+    border-radius: inherit;
     width: inherit;
     height: inherit;
 }
 
 .dsh {
     background-image: url('../img/dashbord-250x300.png');
+    border-radius: inherit;
     width: inherit;
     height: inherit;
 }
@@ -143,16 +178,20 @@ p {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 1.5em;
+    padding: 1em;
 }
 
 .footer h2 {
-    margin-bottom: 1em;
+    margin-bottom: .4em;
 }
 
 .footer i:hover {
     color: #FF682C;
     cursor: pointer;
+}
+
+.footer a:hover {
+    color: #FF682C;
 }
 
 .web-social ul {
