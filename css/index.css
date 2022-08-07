@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
+/* Color Theme Swatches in Hex */
+.main-color-font { color: #E7DDDD; }
+.second-font-color { color: #C1B9B2; }
+.emphasis-color{ color: #FF682C; }
+
+.bgd-dark { background-color: rgba(32, 32, 32, 1); }
+.bgd-silver { background-color: rgba(128, 122, 115, 0.733); }
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +17,7 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 1em;
+    height: auto;
 }
 
 ul {
@@ -17,6 +26,15 @@ ul {
 
 a {
     text-decoration: none;
+    color: #E7DDDD;
+}
+
+h2 {
+    color: #FF682C;
+}
+
+p {
+    line-height: 1.5;
 }
 
 .header {
@@ -33,8 +51,14 @@ a {
 
 
 .header div ul {
-    display: flex;
+    display: flex;   
     justify-content: space-between;
+    flex-shrink: 1em;
+    color: #FF682C;
+}
+
+.header div ul li a {
+    color: #FF682C;
 }
 
 .about-me {
@@ -47,7 +71,8 @@ a {
 }
 
 .my-image {
-    width: 40%;
+    width: 500px;
+    height: 500px;
     background-image: url('../img/my-image.png');
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -55,20 +80,30 @@ a {
 
 .my-description {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     flex-wrap: wrap;
+    text-align: justify;
+    padding: 1em;
     width: 20%;
+    height: auto;
+    border-bottom: 1px solid;
+    border-color:  #E7DDDD;
 }
 
 .competence {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 100%;
+    width: 100%; 
     height: 100vh;
     padding: 1.5em;
 }
 
 .projects {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     padding: 1.5em;
@@ -76,14 +111,53 @@ a {
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
     margin: auto;
+    gap: 2em;
 }
-
 
 .card {
-    border: 1px solid;
-    width: 100px;
-    height: 100px;
+    align-self: flex-start;
+    text-align: center;
+    width: 300px;
+    height: 250px;
 }
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.cdv {
+    background-image: url('../img/tela-controle-vendas-250x300.png');
+    width: inherit;
+    height: inherit;
+}
+
+.dsh {
+    background-image: url('../img/dashbord-250x300.png');
+    width: inherit;
+    height: inherit;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+.footer h2 {
+    margin-bottom: 1em;
+}
+
+.footer i:hover {
+    color: #FF682C;
+    cursor: pointer;
+}
+
+.web-social ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
