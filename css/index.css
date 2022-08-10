@@ -8,6 +8,47 @@
 .bgd-dark { background-color: rgba(32, 32, 32, 1); }
 .bgd-silver { background-color: rgba(128, 122, 115, 0.733); }
 
+@media (max-width: 480px) {
+    .header div {
+        display: none;
+    }
+
+    .my-description {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .bx {
+        font-size: 130px;
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .line-menu {
+        background-color: #FF682C;
+        width: 35px;
+        height: 5px;
+        margin: 7px;
+    }
+
+    .footer {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .web-social {
+        order: 2;
+        margin-top: 10px;
+    }
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +58,7 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 1em;
-    height: auto;
+    height: 100%;
 }
 
 ul {
@@ -81,14 +122,6 @@ figcaption {
     border-bottom: 1px solid;
 }
 
-.my-image {
-    width: 380px;
-    height: 500px;
-    background-image: url('../img/my-image-500x350.jpg');
-    background-repeat: no-repeat;
-    border-radius: 50%;
-}
-
 .my-description {
     display: flex;
     justify-content: center;
@@ -101,12 +134,14 @@ figcaption {
     height: auto;
     border-bottom: 1px solid;
     border-color: #FF682C;
+    animation: move 1s;
+}
+
+@keyframes move {
+    
 }
 
 .competence {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     width: 100%; 
     height: 100vh;
     padding: 1.5em;
@@ -115,16 +150,17 @@ figcaption {
 
 .container-skills ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
     gap: 10px;
-    width: 400px;
-    height: 400px;
-    background-color: #e7dddd0c;
+    width: 80%;
+    height: 100%;
 }
 
 .bx {
-    font-size: 100px;
+    font-size: 130px;
 }
 
 .competence i:hover {
